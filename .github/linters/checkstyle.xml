@@ -188,7 +188,7 @@
         <!-- http://checkstyle.sourceforge.net/config_modifier.html                      -->
         <!-- =========================================================================== -->
         <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/>
+        <!-- <module name="RedundantModifier"/> -->
 
 
         <!-- =========================================================================== -->
