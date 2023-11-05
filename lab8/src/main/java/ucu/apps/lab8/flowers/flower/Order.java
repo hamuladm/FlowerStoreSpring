@@ -32,4 +32,12 @@ public class Order {
     public List<Object> processOrder() {
         return List.of(this.payment, this.delivery, this.items);
     }
+
+    public double totalPrice() {
+        double res = 0;
+        for (Item item : items ) {
+            res += item.getPrice();
+        }
+        return res;
+    }
 }

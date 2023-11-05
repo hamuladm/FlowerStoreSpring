@@ -5,9 +5,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor @ToString
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor @ToString @Entity
 public class Flower {
+    @Id
     private double sepalLength;
     private FlowerColor color;
     private double price;

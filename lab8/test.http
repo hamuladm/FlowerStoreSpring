@@ -1,0 +1,11 @@
+GET http://localhost:8080/api/v1/flower
+
+###
+POST http://localhost:8080/api/v1/flower
+Content-Type: application/json
+
+{
+  "sepalLength": 100,
+  "color": "blue",
+  "price": 100
+}
