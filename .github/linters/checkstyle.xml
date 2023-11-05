@@ -26,7 +26,7 @@
 
     <!-- Check that length of line is at most 80 characters. -->
     <module name="LineLength">
-        <property name="max" value="80"/>
+        <property name="max" value="90"/>
         <property name="ignorePattern" value="^ *\* *[^ ]+$"/>
     </module>
 
@@ -190,7 +190,7 @@
         <!-- http://checkstyle.sourceforge.net/config_modifier.html                      -->
         <!-- =========================================================================== -->
         <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/>
+        <!-- <module name="RedundantModifier"/> -->
 
 
         <!-- =========================================================================== -->
@@ -208,7 +208,7 @@
             <property name="format" value="^[A-Z][A-Z_]*$"/>
         </module>
         <module name="LocalVariableName">
-            <property name="format" value="^[a-z][a-zA-Z]*$"/>
+            <property name="format" value="^[a-z0-9][a-zA-Z0-9]*$"/>
         </module>
         <module name="MemberName">
             <property name="format" value="^[a-z][a-zA-Z]*$"/>

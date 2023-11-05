@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class FlowerController {
     @GetMapping("/list")
-	public FlowerBucket init(){
+	public FlowerBucket init() {
 		Flower flower1 = new Flower(1.5, FlowerColor.RED, 20, FlowerType.ROSE);
         Flower flower2 = new Flower(2.5, FlowerColor.BLUE, 30, FlowerType.CHAMOMILE);
         FlowerPack flowerpack1 = new FlowerPack(flower1, 10);
@@ -21,7 +21,7 @@ public class FlowerController {
 	}
 
     @PostMapping("/add")
-    public void addFlower(Flower flower){
+    public void addFlower(Flower flower) {
 
     }
 }
