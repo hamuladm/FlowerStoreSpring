@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DeliveryStrategy implements Delivery {
     @Override
     @GetMapping("/dhl")
-    public String DHLDelivery(FlowerBucket flowers){
+    public String DHLDelivery(FlowerBucket flowers) {
         return "DHL";
     }
 

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/payment")
-public class PaymentStrategy implements Payment{
+public class PaymentStrategy implements Payment {
 
     @Override
     @GetMapping("/creditcard")

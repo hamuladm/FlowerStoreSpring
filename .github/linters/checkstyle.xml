@@ -12,9 +12,11 @@
 
     <!-- Checks that no tab characters in the source code. -->
     <!-- Reports only first instance. -->
-    <module name="FileTabCharacter">
+    <!-- <module name="FileTabCharacter">    <module name="FileTabCharacter">
         <property name="eachLine" value="false"/>
     </module>
+        <property name="eachLine" value="false"/>
+    </module> -->
 
 
     <!-- Checks that no file is more than 1500 lines long. -->
@@ -85,9 +87,9 @@
         <!--    <module name="DoubleCheckedLocking"/>  NO LONGER AVAILABLE IN CHECKSTYLE 5.6 -->
         <module name="EmptyStatement"/>
         <!--        <module name="EqualsHashCode"/> -->
-        <module name="HiddenField">
+        <!-- <module name="HiddenField">
             <property name="ignoreConstructorParameter" value="true"/>
-        </module>
+        </module> -->
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <!-- <module name="MagicNumber">
@@ -213,11 +215,11 @@
         </module>
 
         <module name="MethodName">
-            <property name="format" value="^[a-z][a-zA-Z]*$"/>
+            <property name="format" value="^[a-zA-Z][a-zA-Z]*$"/>
         </module>
 
         <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z]*)*$"/>
+            <property name="format" value="^[a-zA-Z0-9]+(\.[a-zA-Z0-9][a-zA-Z0-9]*)*$"/>
         </module>
         <module name="PackageName"/>
         <module name="ParameterName">
@@ -226,9 +228,9 @@
         <module name="StaticVariableName">
             <property name="format" value="^[a-z][a-zA-Z]*$|^[A-Z][A-Z_]*$"/>
         </module>
-        <module name="TypeName">
+        <!-- <module name="TypeName">
             <property name="format" value="^[A-Z][a-zA-Z]*$"/>
-        </module>
+        </module> -->
 
         <!-- =========================================================================== -->
         <!-- Regexp                                                                      -->

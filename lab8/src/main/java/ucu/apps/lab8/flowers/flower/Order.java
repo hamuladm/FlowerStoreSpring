@@ -17,19 +17,19 @@ public class Order {
         items.add(item);
     }
 
-    public void removeItem(Item item){
+    public void removeItem(Item item) {
         items.remove(item);
     }
 
-    public void setPaymentStrategy(PaymentStrategy payment){
+    public void setPaymentStrategy(PaymentStrategy payment) {
         this.payment = payment;
     }
 
-    public void setDeliveryStrategy(DeliveryStrategy delivery){
+    public void setDeliveryStrategy(DeliveryStrategy delivery) {
         this.delivery = delivery;
     }
 
-    public List<Object> processOrder(){
+    public List<Object> processOrder() {
         return List.of(this.payment, this.delivery, this.items);
     }
 }
