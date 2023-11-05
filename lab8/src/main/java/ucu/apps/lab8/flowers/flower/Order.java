@@ -1,3 +1,7 @@
+/**
+ * This is a package-level comment.
+ */
+
 package ucu.apps.lab8.flowers.flower;
 
 import java.util.ArrayList;

@@ -1,3 +1,2 @@
-
-SELECT * FROM flower
-
+SELECT * from flower
+WHERE color = 'Red';
